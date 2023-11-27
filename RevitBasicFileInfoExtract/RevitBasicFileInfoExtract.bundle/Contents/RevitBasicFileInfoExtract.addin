@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="DBApplication">
+		<Name>RevitBasicFileInfoExtract</Name>
+		<FullClassName>RevitBasicFileInfoExtract.Command</FullClassName>
+		<Text>RevitBasicFileInfoExtract</Text>
+		<Description>Extract BasicFileInfo from RVT</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>.\RevitBasicFileInfoExtract.dll</Assembly>
+		<AddInId>DC9A3CCF-4EB9-40B1-BFEB-8253FC5B1301</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Autodesk, Inc, www.autodesk.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>
