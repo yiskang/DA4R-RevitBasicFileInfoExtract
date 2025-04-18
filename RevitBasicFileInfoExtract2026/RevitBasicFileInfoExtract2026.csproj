@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<OutputType>Library</OutputType>
+		<RootNamespace>RevitBasicFileInfoExtract</RootNamespace>
+		<AssemblyName>RevitBasicFileInfoExtract</AssemblyName>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<!-- To do "copy local" for referenced local nuget packages into output folder -->
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="RevitBasicFileInfoExtract.bundle\Contents\RevitBasicFileInfoExtract.addin" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="RevitBasicFileInfoExtract.bundle\Contents\RevitBasicFileInfoExtract.addin">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RevitBasicFileInfoExtract.bundle\PackageContents.xml">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Autodesk.Forge.DesignAutomation.Revit" Version="2026.0.0" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2026\NewtonSoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="RevitAPI">
+			<HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2026\RevitAPI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	<PropertyGroup>
+		<PostBuildEvent>xcopy /Y /F "$(ProjectDir)$(OutputPath)*.dll" "$(ProjectDir)RevitBasicFileInfoExtract.bundle\Contents\"
+del /F "$(TargetDir)RevitBasicFileInfoExtract.zip"
+"C:\Program Files\7-Zip\7z.exe" a -tzip "$(TargetDir)RevitBasicFileInfoExtract.zip" "$(ProjectDir)RevitBasicFileInfoExtract.bundle\" -xr0!*.pdb
+
+
+if exist "$(AppData)\Autodesk\REVIT\Addins\2026" copy "$(ProjectDir)RevitBasicFileInfoExtract.bundle\Contents\*.addin" "$(AppData)\Autodesk\REVIT\Addins\2026"
+if exist "$(AppData)\Autodesk\REVIT\Addins\2026" copy "$(ProjectDir)$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\2026"</PostBuildEvent>
+		<AssemblyTitle>RevitBasicFileInfoExtract</AssemblyTitle>
+		<Product>RevitBasicFileInfoExtract</Product>
+		<Copyright>Copyright ©  2025</Copyright>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+	</PropertyGroup>
+</Project>

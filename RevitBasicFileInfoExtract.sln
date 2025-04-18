@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitBasicFileInfoExtract", "RevitBasicFileInfoExtract\RevitBasicFileInfoExtract.csproj", "{A9A47EA7-93F0-41CF-B11E-B345941A128B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitBasicFileInfoExtract2026", "RevitBasicFileInfoExtract2026\RevitBasicFileInfoExtract2026.csproj", "{1F6A7022-F800-4A67-A0EE-A5182C9C188E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A9A47EA7-93F0-41CF-B11E-B345941A128B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9A47EA7-93F0-41CF-B11E-B345941A128B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9A47EA7-93F0-41CF-B11E-B345941A128B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6A7022-F800-4A67-A0EE-A5182C9C188E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6A7022-F800-4A67-A0EE-A5182C9C188E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6A7022-F800-4A67-A0EE-A5182C9C188E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6A7022-F800-4A67-A0EE-A5182C9C188E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

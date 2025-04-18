@@ -3,8 +3,8 @@
 [![Design-Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
 
 ![Windows](https://img.shields.io/badge/Plugins-Windows-lightgrey.svg)
-![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-blue.svg)
-[![Revit-2024](https://img.shields.io/badge/Revit-2024-lightgrey.svg)](http://autodesk.com/revit)
+![.NET](https://img.shields.io/badge/.NET%208-blue.svg)
+[![Revit-2026](https://img.shields.io/badge/Revit-2026-lightgrey.svg)](http://autodesk.com/revit)
 
 ## Description
 
@@ -221,4 +221,4 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 
 ## Written by
 
-Eason Kang [@yiskang](https://twitter.com/yiskang), [Autodesk Developer Advocacy and Support](http://aps.autodesk.com)
+Eason Kang [in/eason-kang-b4398492/](https://www.linkedin.com/in/eason-kang-b4398492), [Autodesk Developer Advocacy and Support](http://aps.autodesk.com)

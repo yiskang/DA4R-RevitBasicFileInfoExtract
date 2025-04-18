@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPackage Name="RevitDesignAutomation" Description="Extract BasicFileInfo Addin" Author="eason.kang@autodesk.com">
+	<CompanyDetails Name="Autodesk, Inc" Url="https://get-started.aps.autodesk.com/" Email="aps.help@autodesk.com"/>
+	<Components Description="Resave IFC to RVT">
+		<RuntimeRequirements SeriesMax="R2026" SeriesMin="R2025" Platform="Revit" OS="Win64"/>
+		<ComponentEntry LoadOnRevitStartup="True" LoadOnCommandInvocation="False" AppDescription="Extract BasicFileInfo from RVT" ModuleName="./Contents/RevitBasicFileInfoExtract.addin" Version="1.0.0" AppName="RevitBasicFileInfoExtract"/>
+	</Components>
+</ApplicationPackage>
